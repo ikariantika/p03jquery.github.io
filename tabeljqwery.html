@@ -1,0 +1,162 @@
+TOP 10 MY BESTIEE>
+<head>
+    <link rel="stylesheet" type="text/css" href="Mystyle.css">
+    <script src="jquery.js"></script>
+    <title>Nama Teman Di Ikmi</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 20px;
+        }
+        th {
+            background-color:#31E1F7;
+            color: black;
+        }
+
+        td{
+            background-color: #C6EBC5;
+        }
+
+        button{
+            background-color: #FA7070;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">NIM</th>
+        </tr>
+
+        <tr>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Prodi</th>
+            <th>Aksi</th>
+         </tr>
+    
+        <tr>
+            <td class="nim">41215373</td>
+            <td class="nama">Elsa Damayanti</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+
+        </tr>
+        <tr>
+            <td class="nim">41215610</td>
+            <td class="nama">Eka Puspita</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td class="nim">41215370</td>
+            <td class="nama">Devita Fitri Anggraeni</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td class="nim">41215611</td>
+            <td class="nama">Dwina Aurelia</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td class="nim">41215685</td>
+            <td class="nama">Divia Azarine</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td class="nim">41215381</td>
+            <td class="nama">Feni Mahmudah</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td class="nim">41215723</td>
+            <td class="nama">Dwi Sartika</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td class="nim">41215920</td>
+            <td class="nama">Hanifah</td>
+            <td class="alamat">>Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td class="nim">41215376</td>
+            <td class="nama">Fany Rahmasari</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+        <tr>
+            <td class="nim">41215384</td>
+            <td class="nama">Firah</td>
+            <td class="alamat">Cirebon</td>
+            <td class="prodi">Informatika</td>
+            <td class="aksi"><button class="btnDelete">Delete</button></td>
+        </tr>
+    </table>
+
+<script>
+    
+$(document).ready(function(){
+            $('.nama').click(function(){
+                let nama = $(this).text();
+                let tampil_nama = alert('Nama : '+nama);
+                if(!tampil_nama) return;
+            })
+        })
+
+        
+        $(document).ready(function(){
+            $('.alamat').click(function(){
+                let alamat = $(this).text();
+                let tampil_alamat = alert('Alamat : '+alamat);
+                if(!tampil_alamat) return;
+            })
+        })
+
+         $(document).ready(function(){
+            $('.nim').click(function(){
+                let alamat = $(this).text();
+                let tampil_alamat = alert('Alamat : '+alamat);
+                if(!tampil_alamat) return;
+            })
+        })
+
+         $(document).ready(function(){
+            $('.prodi').click(function(){
+                let alamat = $(this).text();
+                let tampil_alamat = alert('Alamat : '+alamat);
+                if(!tampil_alamat) return;
+            })
+        })
+
+
+        $(document).ready(function(){
+            $(".btnDelete").on('click', function (){
+                $(this).closest("tr").remove();
+            });
+        });
+
+
+</script>
+
+</body>
+</html>
